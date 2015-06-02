@@ -12,7 +12,7 @@ The sample app: [click me](https://github.com/chenupt/SpringIndicator/raw/master
 Add the dependency to your build.gradle.
 ```
 dependencies {
-    compile 'com.github.chenupt.android:springindicator:1.0.1@aar'
+    compile 'com.github.chenupt.android:springindicator:1.0.2@aar'
 }
 ```
 Add the indicator to your layout.
