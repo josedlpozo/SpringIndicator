@@ -13,12 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package github.chenupt.springindicator;
 
 /**
- * Created by chenupt@gmail.com on 2015/1/31.
- * Description : SpringView point
+ * Created by chenupt@gmail.com on 2015/1/31. Description : SpringView point
  */
 public class Point {
 

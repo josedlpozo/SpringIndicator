@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 27
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "github.chenupt.springindicator.sample"
-        minSdkVersion 11
-        targetSdkVersion 21
+        minSdkVersion 15
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
     }
@@ -20,9 +20,8 @@ android {
 }
 
 dependencies {
-    compile project(":lib")
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.3'
-    compile 'com.github.chenupt.android:multiplemodel:1.1.0@aar'
-    compile 'com.google.guava:guava:18.0'
+    implementation project(":lib")
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.github.chenupt.android:multiplemodel:1.1.0@aar'
 }

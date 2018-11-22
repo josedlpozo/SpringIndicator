@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package github.chenupt.springindicator.viewpager;
 
 import android.content.Context;
@@ -22,17 +21,14 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.animation.DecelerateInterpolator;
-
 import java.lang.reflect.Field;
 
 /**
- * Created by chenupt@gmail.com on 2015/3/7.
- * Description TODO
+ * Created by chenupt@gmail.com on 2015/3/7. Description TODO
  */
 public class ScrollerViewPager extends ViewPager {
 
     private static final String TAG = ScrollerViewPager.class.getSimpleName();
-
     private int duration = 1000;
 
     public ScrollerViewPager(Context context) {
@@ -43,16 +39,14 @@ public class ScrollerViewPager extends ViewPager {
         super(context, attrs);
     }
 
-
-    public void fixScrollSpeed(){
+    public void fixScrollSpeed() {
         fixScrollSpeed(duration);
     }
 
-    public void fixScrollSpeed(int duration){
+    public void fixScrollSpeed(int duration) {
         this.duration = duration;
         setScrollSpeedUsingRefection(duration);
     }
-
 
     private void setScrollSpeedUsingRefection(int duration) {
         try {
@@ -68,8 +62,7 @@ public class ScrollerViewPager extends ViewPager {
         }
     }
 
-    @Override
-    public boolean onInterceptTouchEvent(MotionEvent ev) {
+    @Override public boolean onInterceptTouchEvent(MotionEvent ev) {
         try {
             return super.onInterceptTouchEvent(ev);
         } catch (IllegalArgumentException e) {
